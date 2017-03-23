@@ -1,0 +1,219 @@
+@CHARSET "ISO-8859-1";
+
+<style>
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even){background-color: #f2f2f2}
+
+th {
+    background-color: #4CAF50;
+    color: white;
+}
+
+input[type=text], input[type=password], input[type=file], input[type=email] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+    border: 2px solid red;
+    border-radius: 4px;
+}
+
+select {
+    width: 30%;
+    padding: 16px 20px;
+    border: none;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+}
+
+input[type=button], input[type=submit], input[type=reset], input[type=button] {
+    background-color: red;
+    border: none;
+    color: white;
+    padding: 16px 32px;
+    text-decoration: none;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+div.polaroid {
+  width: 80%;
+  background-color: white;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 25px;
+}
+
+div.container {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+}
+
+#infoEmpresa{
+    font-family: sans-serif;
+    font-size: 10;
+}
+.txtcon{
+	color: black;
+}
+
+.caja{
+	display: block; 	
+	width: 80%;
+	height: 35px;
+	margin-left: 20px;
+	margin-top: 30px;
+	padding-left: 30px;
+	outline: none;
+	border: 0px;
+	border-radius: 5px;
+        
+}
+legend{
+    
+}
+fieldset{
+    border-color: #333;
+    background: #DADADA;
+}
+.btn{
+	margin: 20px;
+	margin-bottom: 20px;
+	width: 80%;
+	height: 40px;
+	background: #3073A6;
+	color: #FFF;
+	border-radius: 5px;
+	border: solid 3px #3073A6;
+}
+
+body{
+	background: white;
+}
+.centrado{margin: 0 auto; width: 1000px; background: #FFF;
+font-family: sans-serif;
+    font-size: 13pt;
+}
+
+
+
+#colum1{
+	display: inline-block;
+	width: 30%;
+	
+}
+#colum2{
+	display: inline-block;
+	width: 68%;
+	
+	vertical-align: top;
+}
+
+#columcat{
+	display: inline-block;
+	width: 30%;
+	background : yellow;
+}
+#columprod{
+	display: inline-block;
+	width: 58%;
+	
+}
+
+.producto{
+	display: inline-block;
+	width: 32%;
+	text-align:  center;
+	
+}
+
+#btn-menu{
+	display: none;
+}
+
+header label{
+	display: none;
+}
+
+.menu ul{
+	margin: 0;
+	list-style: none;
+	padding: 0;
+	display: flex;
+}
+
+.menu li a{
+	display: block;
+	padding: 0px 20px;
+	color: #4C6475;
+	text-decoration: none;
+}
+
+
+@media only screen and (max-width: 480px){
+	.centrado{
+	
+	background: #DADADA; width: 95%;
+}
+
+
+
+.producto{
+	width: 90%;
+	display: block;
+	
+}
+#columprod{
+	display: block;
+	width: 100%;
+}
+#imgag{
+		width: 90%;
+	}
+	
+	header label{
+		display: block;
+	}
+	
+	.menu{
+		position: absolute;
+		width: 80%;
+		margin-top: -500px;
+		background: red;
+		transition: all 0.5s;
+	}
+	
+	#btn-menu:checked ~ .menu{
+		margin: 0;
+	}
+	
+	.menu ul{
+		flex-direction: column;
+	}
+	
+	.menu li{
+		border-top: 1px solid #FFF;
+		padding: 15px 20px;
+	}
+
+
+
+}
+
+</style>
+	
+	input[type=text] {
+    border: 2px solid red;
+    border-radius: 4px;
+}
