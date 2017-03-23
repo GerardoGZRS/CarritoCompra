@@ -1,0 +1,153 @@
+body{
+    background: #cccccc;
+    margin: 0;
+    font-family: sans-serif;
+    font-size: 13pt;
+}
+
+nav#superior{
+    height: 50px;
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    color: white;
+
+    background: #003f15;
+    background: -moz-linear-gradient(top,  #003f15 1%, #006b1e 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(1%,#003f15), color-stop(100%,#006b1e));
+    background: -webkit-linear-gradient(top,  #003f15 1%,#006b1e 100%);
+    background: -o-linear-gradient(top,  #003f15 1%,#006b1e 100%);
+    background: -ms-linear-gradient(top,  #003f15 1%,#006b1e 100%);
+    background: linear-gradient(to bottom,  #003f15 1%,#006b1e 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#003f15', endColorstr='#006b1e',GradientType=0 );
+}
+
+nav#superior div{
+    width: 980px;
+    margin: 0 auto;
+    text-align: right;
+}
+
+nav#superior div span{
+    height: 50px;
+    padding: 10px;
+}
+
+nav#superior div span:hover{
+    background-color: #003f15;
+    cursor: pointer;
+}
+
+header, section, footer, nav{
+    width: 980px;
+    margin: 0 auto;
+}
+
+header{
+    height: 120px;
+    border-bottom: 5px solid maroon;
+}
+
+header img{
+    margin: 20px;
+}
+header div{
+    float:left;
+    width: 50%;
+    height: 120px;
+}
+header div input{
+    margin-top: 50px;
+    height: 20px;
+}
+#buscador{
+    text-align: right;
+}
+nav#menu{
+    height: 80px;
+}
+nav#menu div{
+    height: 80px;
+    width: 20%;
+    line-height: 80px;
+    color: #006b1e;
+    float:left;
+    font-size: 16pt;
+    text-align: center;
+
+    background: #e2e2e2;
+    background: -moz-linear-gradient(top,  #e2e2e2 0%, #dbdbdb 50%, #d1d1d1 51%, #fefefe 100%);
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#e2e2e2), color-stop(50%,#dbdbdb), color-stop(51%,#d1d1d1), color-stop(100%,#fefefe));
+    background: -webkit-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: -o-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: -ms-linear-gradient(top,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    background: linear-gradient(to bottom,  #e2e2e2 0%,#dbdbdb 50%,#d1d1d1 51%,#fefefe 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e2e2e2', endColorstr='#fefefe',GradientType=0 );
+}
+
+nav#menu div:hover{
+    cursor: pointer;
+    border-bottom: 5px solid #006b1e;
+    font-size: 18pt;
+}
+
+section{
+    min-height: 550px;
+    text-align: center;
+}
+
+section h1{
+    text-align: center;
+}
+
+footer{
+    text-align: center;
+}
+
+section table {
+    width: 120px;
+    margin: 0 auto;
+    border: 3px white solid;
+    border-radius: 5px;
+}
+
+section table thead{
+    background-color: red;
+    color: white;
+    text-align: center;
+    font-size: 14pt;
+}
+
+section table tbody{
+    text-align: center;
+}
+
+section table tbody tr:nth-child(even){
+    background-color: white;
+    color: black;
+}
+
+section table tbody tr:nth-child(odd){
+    background-color: silcer;
+}
+
+section table img{
+    width: 35px;
+}
+
+#miniMenu{
+    width: 90%;
+    margin: 0 auto;
+    text-align: right;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+img#agregar{
+    width: 50px;
+}
+
+fieldset{
+    width: 450px;
+    margin: 0 auto;
+}
