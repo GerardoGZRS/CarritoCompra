@@ -5,7 +5,7 @@ include '../bd/conexion.php';
 $q=$_POST['q'];
 
 
-$sql="select * from productos where producto LIKE '".$q."%'";
+$sql="select * from productos where id_categoria LIKE '".$q."%'";
 $resultado = $mysqli->query($sql);
 
 if (!$resultado) {

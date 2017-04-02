@@ -13,7 +13,7 @@ include '../bd/conexion.php';
                 $codigoPostal = $_REQUEST["codigoPostal"];
                 
 
-                $sentencia = "INSERT INTO proveedor () VALUES (null,'$empresa', '$rfc',
+                $sentencia = "INSERT INTO proveedor () VALUES (null ,'$empresa', '$rfc',
                 '$direccion', '$telefono', '$correo', $celular, $estado, $municpio, $colonia, $codigoPostal)";
                 $resultado = $mysqli->query($sentencia);
                 echo $sentencia;

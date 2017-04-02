@@ -57,11 +57,12 @@
 <div class="menu">
 	<ul>
 		<li><a href="index.php" class="selected-menu">Inicio</a></li>
-		<li><a href="#">Acerca de..</a></li>
+		<li><a href="acerca.php">Acerca de..</a></li>
 		<li><a href="#">Productos</a></li>
 		<li><a href="#">Servicios</a></li>
 		<li><a href="contacto.php">Contacts</a></li>
-		<li><a href="../Administrador/index.php">Sesion</a></li>
+		<li><a href="registro.php">Registro</a></li>
+		<li><a href="login.php">Sesion</a></li>
 	</ul>
 
 	<div class="inpSearch">
@@ -69,3 +70,5 @@
 		<button><img src="images/lupa.png"></button>
 	</div>
 </div>
+
+

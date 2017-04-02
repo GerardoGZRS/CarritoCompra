@@ -18,7 +18,7 @@
                 .", precio_venta = '$precio_venta'"
                 .", precio_compra = '$precio_compra'"
                 .", imagen = '$imagen'"
-                ." WHERE id_categoria=".$id_producto;
+                ." WHERE id_producto=".$id_producto;
         echo $sentencia;
                 $resultado = $mysqli->query($sentencia);
                 if ($resultado) {

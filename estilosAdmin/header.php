@@ -49,9 +49,9 @@
 			<?php
 			session_start();
 if (@!$_SESSION['rol']==1) {
-	header("Location: /CarritoCompra/Administrador/index.php");
-}elseif ($_SESSION['rol']==2) {
-	header("Location: /CarritoCompra/Administrador/index2.php");
+	header("Location: /Carrito_Compra/Administrador/index.php");
+}elseif (@!$_SESSION['rol']==2) {
+	header("Location: /Carrito_Compra/Administrador/index.php");
 }
 ?>
 

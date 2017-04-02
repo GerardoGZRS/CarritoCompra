@@ -5,6 +5,7 @@
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/normalize.css">
 	<link rel="stylesheet" type="text/css" href="css/styles.css">
+	<script type="text/javascript" src="../js/categoriaB.js"></script>
 </head>
 
 <body>
@@ -64,7 +65,7 @@
 				$resultado = $mysqli->query($sentencia);
 				while ($row=mysqli_fetch_array($resultado)){
 				?>
-					<li class="liListasLeft"><img src="images/flechalistLeft.png"><a class="tag-product-uno" href="#"><?php echo $row["categoria"];?></a></li>
+					<li class="liListasLeft"><img src="images/flechalistLeft.png"><a  class="tag-product-uno" href="productosC.php?id_categoria=<?php echo $row["id_categoria"]?>"><?php echo $row["categoria"];?></a></li>
 					
 				<?php }?>
 				</ul>
@@ -91,7 +92,9 @@
 					<h1>Featured <span>Productos</span></h1>
 					<a href="#" class="btn-all-products-x">Ver todos los productos</a>
 				</div>
+<div id=""myDiv"">
 
+</div>
 				
 				<?php
 				include '../bd/conexion.php';
@@ -100,7 +103,7 @@
 				while($row=mysqli_fetch_array($resultado)){
 					
 					    echo '<div class="producto-x">
-								<a href="../pagina/productos.php">
+								<a href="../pagina/detalleProducto.php?id_producto='.$row["id_producto"].'">
 									<img class="img-product-x" src="'.$row["imagen"].'">
 									<div class="info-product-x">
 										<span>'.$row["producto"].'</span><br><br>

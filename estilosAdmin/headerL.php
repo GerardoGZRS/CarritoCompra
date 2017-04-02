@@ -1,3 +1,6 @@
+	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css">
+	<link rel="stylesheet" type="text/css" href="../css/styles.css">
 <header>	
 	<div class="logo">
 		<img src="../pagina/images/logo.png">
@@ -42,16 +45,16 @@
 
 <div class="menu">
 	<ul>
-		<li><a href="index.php" class="selected-menu">Inicio</a></li>
+		<li><a href="../pagina/index.php" class="selected-menu">Inicio</a></li>
 		<li><a href="#">Acerca de..</a></li>
 		<li><a href="#">Productos</a></li>
 		<li><a href="#">Servicios</a></li>
-		<li><a href="contacto.php">Contacts</a></li>
-		<li><a href="../Administrador/index.php">Sesion</a></li>
+		<li><a href="../clientes/registroClientes.php">Registrate</a></li>
+		<li><a href="../Administrador/index.php">Ingresar</a></li>
 	</ul>
 
 	<div class="inpSearch">
 		<input type="text" placeholder="Buscar">
-		<button><img src="images/lupa.png"></button>
+		<button><img src="../images/lupa.png"></button>
 	</div>
 </div>

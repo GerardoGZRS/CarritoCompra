@@ -12,13 +12,13 @@
 		<div class="info-website">
 			<ul>
 				<li class="label-footer-info">
-					<a href="#">Website templete</a>
-					<span> designed by Templatesmaster.com</span>
+					<a href="#"></a>
+					<span> </span>
 				</li>
 
 				<li class="label-footer-info2">
-					<a href="#">3D Medels</a>
-					<span> provided by Templates.com</span>
+					<a href="#"></a>
+					<span></span>
 				</li>
 			</ul>
 		</div>

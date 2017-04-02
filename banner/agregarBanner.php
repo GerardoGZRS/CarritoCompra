@@ -1,7 +1,7 @@
 <
 <?php 
             include '../bd/conexion.php';   
-              $tamaño = $_FILES["archivo"]["size"];
+              
               
               //Subir archivos
                 if($_POST["action"] == "upload"){

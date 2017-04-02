@@ -29,4 +29,4 @@
             //cerrar conexión
             $conexion->close();
             ?>
-        </section
+        </section>

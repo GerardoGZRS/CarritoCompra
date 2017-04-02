@@ -27,9 +27,9 @@ session_start();
 	}
 
 
-	$sql=mysqli_query($mysqli,"SELECT * FROM login WHERE email='$username'");
+	$sql=mysqli_query($mysqli,"SELECT * FROM login WHERE email='$username' and rol='2'");
 	if($f=mysqli_fetch_assoc($sql)){
-		if($pass==$f['password']){
+		if($pass==$f['pasadmin']){
 			$_SESSION['id']=$f['id'];
 			$_SESSION['user']=$f['user'];
 			$_SESSION['rol']=$f['rol'];
@@ -39,13 +39,31 @@ session_start();
 		}else{
 			echo '<script>alert("CONTRASEÑA INCORRECTA")</script> ';
 		
-			echo "<script>location.href='index.php'</script>";
+			echo "<script>location.href='../pagina/login.php'</script>";
 		}
-	}else{
+	}
+	
+	$sentencia=mysqli_query($mysqli,"SELECT * FROM login WHERE email='$username' and rol='3'");
+	if($f1=mysqli_fetch_assoc($sentencia)){
+		if($pass==$f1['password']){
+			$_SESSION['id']=$f1['id'];
+			$_SESSION['user']=$f1['user'];
+			$_SESSION['rol']=$f1['rol'];
+
+			echo '<script>alert("BIENVENIDO '.$f1["user"].'")</script> ';
+			echo "<script>location.href='../pagina/index.php'</script>";
+		}else{
+			echo '<script>alert("CONTRASEÑA INCORRECTA")</script> ';
+		
+			echo "<script>location.href='../pagina/login.php'</script>";
+		}
+	}
+	
+	else{
 		
 		echo '<script>alert("ESTE USUARIO NO EXISTE, PORFAVOR REGISTRESE PARA PODER INGRESAR")</script> ';
 		
-		echo "<script>location.href='index.php'</script>";	
+		echo "<script>location.href='../pagina/index.php'</script>";	
 
 	}
 
